@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Left Side */
+.first-part {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-part h2.page-title {
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 700;
+}
+
+.first-part p.login-description {
+    color: #525252;
+    margin-bottom: 20px;
+}
+
+.first-part form {
+    width: 50%;
+}
+
+.first-part form input[type="text"],
+.first-part form input[type="password"] {
+    height: 52px;
+    background: #F0EDFFCC;
+    border: unset;
+    border-radius: 16px;
+    padding-left: 48px;
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.first-part form input[type="text"]:focus-visible,
+.first-part form input[type="password"]:focus-visible {
+    outline: unset;
+}
+
+.first-part form input[type="submit"] {
+    height: 52px;
+    background: linear-gradient(90deg, #9181f4, #5038ed);
+    font-size: 12px;
+    font-weight: 700;
+    border: unset;
+    width: 124px;
+    border-radius: 16px;
+    box-shadow: 0 8px 21px 0 #00000029;
+    color: white;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.first-part p.others-login::before,
+.first-part p.others-login::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    background: #f0edff;
+    width: 110px;
+    top: 12px;
+}
+
+.first-part p.others-login::before {
+    margin-right: 5px;
+    right: 100%;
+}
+
+.first-part p.others-login::after {
+    margin-left: 5px;
+    left: 100%;
+}
+
+.first-part p.others-login span {
+    font-weight: 700;
+}
+
+.first-part form label,
+.first-part p.others-login {
+    position: relative;
+}
+
+.first-part form label img {
+    position: absolute;
+    top: 0;
+    margin-left: 20px;
+    height: 24px;
+    font-family: "Poppins", sans-serif;
+}
+
+.first-part .google-login,
+.first-part .facebook-login {
+    width: 50%;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #f0edff;
+    border-radius: 16px;
+    height: 52px;
+    margin-top: 20px;
+}
+
+.first-part .google-login span,
+.first-part .facebook-login span {
+    font-weight: 700;
+}
+
+.first-part .google-login p,
+.first-part .facebook-login p {
+    margin-left: 10px;
+}
+
+/* Right Side */
+.second-part {
+    background: linear-gradient(#9181F4 100%, #5038ED 100%);
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second-part .bg {
+    background: url("./images/second-part-bg.png");
+    height: inherit;
+    width: inherit;
+    opacity: .1;
+    position: absolute;
+}
+
+.second-part .poster {
+    background-color: #ffffff36;
+    border: 1px solid #ffffff85;
+    border-radius: 35px;
+    width: 52%;
+    height: 70%;
+    position: relative;
+}
+
+.second-part h2.poster-title {
+    padding: 25px 0 0 40px;
+    font-weight: 700;
+    color: white;
+    line-height: 46px;
+    font-size: 30px;
+}
+
+.second-part img.person-poster {
+    width: 720px;
+    position: absolute;
+    bottom: 0;
+    right: -100px;
+}
+
+.second-part .poster-icon {
+    position: absolute;
+    width: 79px;
+    height: 79px;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    bottom: 15%;
+    left: -10%;
+}
